@@ -46,6 +46,8 @@
             listBox1 = new ListBox();
             label6 = new Label();
             button4 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // textBox1
@@ -59,12 +61,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
+            label1.BackColor = Color.LightCoral;
             label1.Location = new Point(191, 24);
             label1.Name = "label1";
             label1.Size = new Size(44, 15);
             label1.TabIndex = 1;
-            label1.Text = "Length";            // 
+            label1.Text = "Length";
+            // 
             // textBox2
             // 
             textBox2.BackColor = Color.SkyBlue;
@@ -76,7 +79,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
+            label2.BackColor = Color.Khaki;
             label2.Location = new Point(193, 181);
             label2.Name = "label2";
             label2.Size = new Size(31, 15);
@@ -94,7 +97,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
+            label3.BackColor = Color.DeepSkyBlue;
             label3.Location = new Point(192, 129);
             label3.Name = "label3";
             label3.Size = new Size(42, 15);
@@ -112,7 +115,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
+            label4.BackColor = Color.LightCoral;
             label4.Location = new Point(192, 78);
             label4.Name = "label4";
             label4.Size = new Size(39, 15);
@@ -122,7 +125,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.BackColor = Color.Transparent;
+            label5.BackColor = Color.Khaki;
             label5.Location = new Point(190, 234);
             label5.Name = "label5";
             label5.Size = new Size(46, 15);
@@ -139,7 +142,7 @@
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.ActiveCaption;
+            button1.BackColor = Color.Khaki;
             button1.Location = new Point(119, 302);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
@@ -150,7 +153,7 @@
             // 
             // button2
             // 
-            button2.BackColor = SystemColors.ActiveCaption;
+            button2.BackColor = Color.DeepSkyBlue;
             button2.Location = new Point(200, 302);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
@@ -161,7 +164,7 @@
             // 
             // button3
             // 
-            button3.BackColor = SystemColors.ActiveCaption;
+            button3.BackColor = Color.LightCoral;
             button3.Location = new Point(38, 302);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
@@ -192,8 +195,8 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Location = new Point(13, 235);
+            label6.BackColor = Color.DarkSeaGreen;
+            label6.Location = new Point(13, 237);
             label6.Name = "label6";
             label6.Size = new Size(78, 15);
             label6.TabIndex = 9;
@@ -201,7 +204,7 @@
             // 
             // button4
             // 
-            button4.BackColor = SystemColors.ActiveCaption;
+            button4.BackColor = Color.DarkSeaGreen;
             button4.Location = new Point(88, 331);
             button4.Name = "button4";
             button4.Size = new Size(136, 23);
@@ -210,11 +213,21 @@
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(305, 371);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(305, 371);
             Controls.Add(button4);
@@ -234,8 +247,10 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -259,5 +274,6 @@
         private ListBox listBox1;
         private Label label6;
         private Button button4;
+        private PictureBox pictureBox1;
     }
 }
