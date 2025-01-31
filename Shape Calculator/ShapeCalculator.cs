@@ -18,9 +18,9 @@ namespace Shape_Calculator
             return Math.PI * radius * radius;
         }
 
-        public double CalculateArea(double baseLength, double height, bool isTriangle)
+        public double CalculateArea(double Base, double height, bool isTriangle)
         {
-            return 0.5 * baseLength * height;
+            return 0.5 * Base * height;
         }
     }
 }
