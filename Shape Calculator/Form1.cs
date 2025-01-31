@@ -10,9 +10,9 @@ namespace Shape_Calculator
         //Triangle
         private void button1_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(textBox4.Text, out double baseLength) && double.TryParse(textBox5.Text, out double height))
+            if (double.TryParse(textBox4.Text, out double Base) && double.TryParse(textBox5.Text, out double height))
             {
-                double area = calculator.CalculateArea(baseLength, height, true);
+                double area = calculator.CalculateArea(Base, height, true);
                 DisplayResult($"Triangle: {area}");
             }
             textBox4.Clear();
